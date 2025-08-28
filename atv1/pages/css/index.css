@@ -1,0 +1,108 @@
+.container-perfil {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 100px 10%;
+  align-items: center;
+  letter-spacing: 0.1rem;
+}
+
+.container-sobre {
+  width: 50%;
+}
+
+.title-name {
+  font-size: 2.2rem;
+  font-weight: bold;
+} 
+
+.about-text {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.container-foto {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-foto img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 200px;
+  object-fit: cover;
+}
+
+.botao-download {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #534770;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao-download:hover {
+  background-color: #40195a;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;  
+  margin-top: 1.5rem;    
+  margin-bottom: 1.5rem;  
+}
+
+
+.portfolio-wrapper {
+  max-width: 60rem;    
+  margin: 0 auto;      
+  padding: 1.5rem 2rem; 
+}
+
+.titulo-conteudo-site {
+    text-align: center;
+
+    color: #534770;
+    margin-bottom: 2rem;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: #8db6cf;
+    border-radius: 10px;
+    max-width: 300px; 
+    margin: 0 auto;
+    padding: 0.8rem 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}

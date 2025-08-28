@@ -1,0 +1,113 @@
+/* Style Geral */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: azure;
+  
+}
+
+main {
+  flex: 1;
+  padding: 0 8%;
+}
+
+/* NavBar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2f4c7c; 
+    padding: 1.5rem 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.navbar_container{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#titulo_navbar{
+    text-decoration: none;
+    font-size: 130%;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: default;
+  }
+
+.item_navbar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease;
+  }
+
+.item_navbar:hover {
+    text-decoration: underline;
+  }
+
+#itens_navbar{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+/* Footer */
+.footer {
+    display: flex;  
+    bottom: 0; 
+    width: 100%;
+    background-color: #2f4c7c;
+    color: #ffffff;
+    padding: 30px 0 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+.footer_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+.footer_section {
+    flex: 1 1 250px;
+  }
+  
+.footer_section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+.item_footer {
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+.item_footer:hover {
+    text-decoration: underline;
+    color: #c2f0ff;
+  }
+  
+.footer_bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #cccccc;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+  }

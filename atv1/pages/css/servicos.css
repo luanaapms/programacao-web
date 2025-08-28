@@ -1,0 +1,144 @@
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: #8db6cf;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.ferramentas-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;  
+  gap: 2rem;                
+  max-width: 700px; 
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+  flex-wrap: wrap;       
+}
+
+.imagem-esquerda, .imagem-direita {
+  flex: 0 0 150px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-esquerda img, .imagem-direita img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto-centro {
+  flex: 1;        
+  min-width: 250px;  
+}
+
+.lista-ferramentas {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  color: #333;
+}
+
+.lista-ferramentas li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.interesses {
+  padding: 2rem;
+  text-align: center;
+}
+
+.interesse-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.interesse-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.interesse-item:hover {
+  transform: translateY(-5px);
+}
+
+.interesse-item i {
+  font-size: 2rem;
+  color: #8db6cf;
+  margin-bottom: 1rem;
+}
+
+.interesses h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.interesse-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.interesse-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .ferramentas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagem-esquerda, .imagem-direita {
+    flex: 0 0 auto;
+    max-width: 80%;      
+    margin-bottom: 1rem;
+  }
+
+  .imagem-esquerda img, .imagem-direita img {
+    max-width: 100%;     
+  }
+
+  .texto-centro {
+    min-width: auto;
+    width: 90%;          
+    text-align: center;  
+  }
+}
+
+
